@@ -101,5 +101,42 @@ list_name = ["Eylin", "Marta", "Carlos", "Deimian","Jesús", "Verónica", "Deimi
 # print(result)
 
 
-result =  [f"Hola ¿qué tal {item}?" for item in list_name if len(item) <= 6 ]
-print(result)
+# result =  [f"Hola ¿qué tal {item}?" for item in list_name if len(item) <= 6 ]
+# print(result)
+
+
+
+
+
+# print(human["heigth"])
+
+
+# destructuring
+# person = ("Alice", 30, "Engineer")
+# name, age, profesion = person
+
+# names = ["Juanita", "María"]
+
+# naloquesea, name_two = names
+# print(naloquesea)
+
+# for key, value in human.items():
+#     print(key, value)
+
+human = {
+    "name":"Deimian Vásquez",
+    "age": 18,
+    "height": 1.70
+}
+
+human_two = {
+    "pets":["perro"],
+    "eye_color":"red"
+}
+
+human.update(human_two)
+human["pets"] = ["Perro", "Gato"]
+
+
+print(human.get("eye_color", "Escribe bien amigo mio"))
+
